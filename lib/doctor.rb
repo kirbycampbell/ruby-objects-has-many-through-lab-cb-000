@@ -4,7 +4,7 @@ attr_accessor :name
 
   def initialize(name)
     @name = name
-    @appointments = []  
+    @appointments = []
   end
 
   def add_appointment(appt)
@@ -19,6 +19,7 @@ attr_accessor :name
   def patients
     self.appointments.collect do |patient|
       patient.doctor
+    end
   end
 
 end
