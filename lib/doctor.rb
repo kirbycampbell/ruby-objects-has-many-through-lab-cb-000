@@ -17,8 +17,8 @@ attr_accessor :name
   end
 
   def patients
-    self.appointments.collect do |patient|
-      patient.doctor
+    self.appointments.collect do |appt|
+      appt.patient
     end
   end
 
