@@ -15,10 +15,9 @@ attr_accessor :name, :songs
   end
 
   def artists
-    self.songs.collect do |artist|
-      artist.song
+    self.songs.collect do |song|
+      song.artist
     end
-
   end
 
 end
